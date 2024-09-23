@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Rajah</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjana Rajah Sanad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Penjana Rajah Sanad</h1>
+    <div class="instruction">Masukkan sanad di sini.</div>
+    <div class="container" id="paragraphContainer">
+        <div class="paragraph-wrapper">
+            <textarea class="paragraph" placeholder="Tulis atau tampal sanad anda di sini..."></textarea>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button onclick="clearText()">Hapus</button>
+        <button onclick="addParagraph()">Tambah Sanad</button>
+        <button onclick="generate()">Jana Rajah Sanad</button>
+    </div>
+
+    <!-- Section to display combined unique names -->
+    <div id="combinedNamesContainer">
+        <h2>Rajah Sanad</h2>
+        <div class="instruction">Klik di atas nama perawi</div>
+    </div>
+
+    <!-- Color explanation table -->
+    <table>
+        <thead>
+            <tr>
+                <th>Penerangan</th>
+                <th>Warna</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Thiqah</td>
+                <td class="green"></td>
+            </tr>
+            <tr>
+                <td>Saduq</td>
+                <td class="blue"></td>
+            </tr>
+            <tr>
+                <td>Dhaif Muhtamal</td>
+                <td class="yellow"></td>
+            </tr>
+            <tr>
+                <td>Dhaif</td>
+                <td class="orange"></td>
+            </tr>
+            <tr>
+                <td>Syadid al-Dhaf</td>
+                <td class="chocolate"></td>
+            </tr>
+            <tr>
+                <td>Wahi</td>
+                <td class="red"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Scholar Opinion Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="scholarName"></h2>
+            <p id="scholarOpinion"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
